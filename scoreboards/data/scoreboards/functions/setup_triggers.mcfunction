@@ -74,3 +74,5 @@ scoreboard objectives add .animalBabysMade trigger
 scoreboard objectives add .SwordSwings trigger
 scoreboard objectives add .ShovelUser trigger
 scoreboard objectives add .HardestStone trigger
+
+scoreboard objectives add .clear trigger
