@@ -8,3 +8,7 @@ scoreboard players operation TPS-20.00 Debug /= MSPT-50.00 Debug
 
 scoreboard players set entities Debug 0
 execute as @e run scoreboard players add entities Debug 1
+
+execute if entity @a[scores={.Debug=1..}] run scoreboard objectives setdisplay sidebar Debug
+scoreboard players reset @a .Debug
+scoreboard players enable @a .Debug
