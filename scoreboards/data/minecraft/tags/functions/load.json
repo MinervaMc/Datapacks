@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "scoreboards:install",
+	"scoreboards:setup_scoreboards"
+  ]
+}
