@@ -1,3 +1,6 @@
+execute if entity @a[scores={.SbCycle=1..}] run function scoreboards:toggle_cycle
+scoreboard players enable @a .SbCycle
+
 scoreboard players add value current_sb 1
 
 execute if score value current_sb matches 14 run scoreboard players set value current_sb 0

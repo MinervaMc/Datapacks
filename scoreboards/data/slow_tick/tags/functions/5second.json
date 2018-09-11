@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "scoreboards:cycle"
+    "scoreboards:cycle",
+    "scoreboards:check_triggers"
   ]
 }
