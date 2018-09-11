@@ -1,0 +1,1 @@
+execute as @e[type=cod] at @s run teleport @s ~ -1000 ~

@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "description": "Adds players to an afk team when they go afk",
+    "pack_format": 4
+  }
+}

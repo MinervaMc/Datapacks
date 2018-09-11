@@ -1,0 +1,1 @@
+execute as @e[nbt={Item:{id:"minecraft:netherrack"}}] run data merge entity @s {Age:5900s}
