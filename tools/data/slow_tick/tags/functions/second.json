@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-	"tools:tps_check"
+	"tools:run_tick"
   ]
 }
