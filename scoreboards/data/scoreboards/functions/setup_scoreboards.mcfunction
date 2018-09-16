@@ -74,3 +74,4 @@ scoreboard objectives add animalBabysMade minecraft.custom:minecraft.animals_bre
 scoreboard objectives add SwordSwings minecraft.used:minecraft.diamond_sword "SwordSwings"
 scoreboard objectives add ShovelUser minecraft.used:minecraft.diamond_shovel "ShovelUser"
 scoreboard objectives add HardestStone minecraft.broken:minecraft.obsidian "HardestStone"
+scoreboard objectives add IcePacked minecraft.broken:minecraft.packed_ice
