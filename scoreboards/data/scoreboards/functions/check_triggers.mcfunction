@@ -74,7 +74,7 @@ execute if entity @a[scores={.animalBabysMade=1..}] run scoreboard objectives se
 execute if entity @a[scores={.SwordSwings=1..}] run scoreboard objectives setdisplay sidebar SwordSwings
 execute if entity @a[scores={.ShovelUser=1..}] run scoreboard objectives setdisplay sidebar ShovelUser
 execute if entity @a[scores={.HardestStone=1..}] run scoreboard objectives setdisplay sidebar HardestStone
-execute if entity @a[scores={.IcePacked=1..}] run scoreboard objectives setdisplay sidebar .IcePacked
+execute if entity @a[scores={.IcePacked=1..}] run scoreboard objectives setdisplay sidebar IcePacked
 execute if entity @a[scores={.clear=1..}] run scoreboard objectives setdisplay sidebar
 
 scoreboard players reset @a .HoesPimpedOut
