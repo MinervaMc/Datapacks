@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-	"tools:tps/run_tick"
+	"tools:unicorn/run_tick"
   ]
 }

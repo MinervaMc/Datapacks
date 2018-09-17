@@ -1,0 +1,7 @@
+replaceitem entity @s armor.head air
+replaceitem entity @s[scores={.Unicorn=1}] armor.head minecraft:end_rod{Enchantments:[{id:"minecraft:binding_curse",lvl:5}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:100,Operation:0,UUIDLeast:645361,UUIDMost:147707,Slot:"head"}]}
+replaceitem entity @s[scores={.Unicorn=2}] armor.head minecraft:oak_button{Enchantments:[{id:"minecraft:binding_curse",lvl:5}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:100,Operation:0,UUIDLeast:645361,UUIDMost:147707,Slot:"head"}]}
+replaceitem entity @s[scores={.Unicorn=3}] armor.head minecraft:glass{Enchantments:[{id:"minecraft:binding_curse",lvl:5}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:100,Operation:0,UUIDLeast:645361,UUIDMost:147707,Slot:"head"}]}
+replaceitem entity @s[scores={.Unicorn=4}] armor.head minecraft:lead{Enchantments:[{id:"minecraft:binding_curse",lvl:5}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:100,Operation:0,UUIDLeast:645361,UUIDMost:147707,Slot:"head"}]}
+
+tellraw @s {"color":"yellow","text":"You are now a unicorn"}
