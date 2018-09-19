@@ -1,4 +1,4 @@
-####Datapacks:
+#### Datapacks:
  - disable_endermen_grief (Endermen can't pick up blocks)
  - universal_dyeing (Adds dye-related recipes, like for hardened clay)
  - sleep (One player sleep, you can wake up people via clicking the chat msg)
@@ -10,22 +10,22 @@
  - fast_stone [disabled] (Stone & cobble despawns in 5-10 seconds)
  - tools (Random tools: entity counter, tps display, unicorn, read more bellow)
 
-####Commands:
+#### Commands:
 Most of the commands are triggers, they can be run via `/trigger .<name> set <num>`. Num is always 1 unless otherwise specified.
 
-#####Scoreboard
+##### Scoreboard
  - Toggle the scoreboard cycle: `.SbCycle`
  - Set a specific scoreboard: `.StatName` will set the StatName scoreboard (eg: `.Deaths`)
  - Clear the sidebar: `.clear`
 
-#####Tps & Entity counter
+##### Tps & Entity counter
 To show & update the debug scoreboard for N seconds: `.Debug set [seconds]` (max: 60).\
 Don't trust first second result, always set it for a few secs.\
 You should disable the sb cycle, or debug sb will get overridden every 5s by the cycle.
 
 The player-specific entity counter can be triggered via `/function tools:entity_count` (OP only)
 
-#####Unicorn 
+##### Unicorn 
 The `.Unicorn` trigger will toggle the horn, accepted values:
  1. end_rod
  2. button
