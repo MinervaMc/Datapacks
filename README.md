@@ -8,10 +8,12 @@
  - fast_netherrack (Netherrack items despawn in 5-10 seconds)
  - scoreboards (Scoreboard cycle & triggers, read more bellow)
  - fast_stone [disabled] (Stone & cobble despawns in 5-10 seconds)
+ - spectator (Spectator gamemode for everyone)
  - tools (Random tools: entity counter, tps display, unicorn, read more bellow)
 
 #### Commands:
-Most of the commands are triggers, they can be run via `/trigger .<name> set <num>`. Num is always 1 unless otherwise specified.
+All of the trigger commands are in the form of `/trigger .<name>` (defaults to value 1)\
+When a number means something you'll need to use `/trigger .<name> set [num]`
 
 ##### Scoreboard
  - Toggle the scoreboard cycle: `.SbCycle`
@@ -31,3 +33,6 @@ The `.Unicorn` trigger will toggle the horn, accepted values:
  2. button
  3. glass
  4. lead
+ 
+##### Spectator
+To toggle between survival and spectator you can use the `.Spectator` trigger, when leaving spectator mode you will be placed where you entered spectator mode.
