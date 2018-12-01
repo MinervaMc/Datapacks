@@ -1,3 +1,5 @@
+team join default @a[team=]
+
 execute if entity @a[scores={.SbCycle=1..}] run function scoreboards:toggle_cycle
 scoreboard players enable @a .SbCycle
 
