@@ -75,7 +75,24 @@ execute if entity @a[scores={.SwordSwings=1..}] run scoreboard objectives setdis
 execute if entity @a[scores={.ShovelUser=1..}] run scoreboard objectives setdisplay sidebar ShovelUser
 execute if entity @a[scores={.HardestStone=1..}] run scoreboard objectives setdisplay sidebar HardestStone
 execute if entity @a[scores={.IcePacked=1..}] run scoreboard objectives setdisplay sidebar IcePacked
+
 execute if entity @a[scores={.clear=1..}] run scoreboard objectives setdisplay sidebar
+execute if entity @a[scores={.color=1}] run team modify default color dark_blue
+execute if entity @a[scores={.color=2}] run team modify default color dark_green
+execute if entity @a[scores={.color=3}] run team modify default color dark_aqua
+execute if entity @a[scores={.color=4}] run team modify default color dark_red
+execute if entity @a[scores={.color=5}] run team modify default color dark_purple
+execute if entity @a[scores={.color=6}] run team modify default color gold
+execute if entity @a[scores={.color=7}] run team modify default color gray
+execute if entity @a[scores={.color=8}] run team modify default color dark_gray
+execute if entity @a[scores={.color=9}] run team modify default color blue
+execute if entity @a[scores={.color=10}] run team modify default color green
+execute if entity @a[scores={.color=11}] run team modify default color aqua
+execute if entity @a[scores={.color=12}] run team modify default color red
+execute if entity @a[scores={.color=13}] run team modify default color light_purple
+execute if entity @a[scores={.color=14}] run team modify default color yellow
+execute if entity @a[scores={.color=15}] run team modify default color white
+execute if entity @a[scores={.color=16}] run team modify default color black
 
 scoreboard players reset @a .HoesPimpedOut
 scoreboard players reset @a .PickaxeDeaths
@@ -154,7 +171,9 @@ scoreboard players reset @a .SwordSwings
 scoreboard players reset @a .ShovelUser
 scoreboard players reset @a .HardestStone
 scoreboard players reset @a .IcePacked
+
 scoreboard players reset @a .clear
+scoreboard players reset @a .color
 
 scoreboard players enable @a .HoesPimpedOut
 scoreboard players enable @a .PickaxeDeaths
@@ -235,3 +254,4 @@ scoreboard players enable @a .HardestStone
 scoreboard players enable @a .IcePacked
 
 scoreboard players enable @a .clear
+scoreboard players enable @a .color

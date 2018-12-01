@@ -19,6 +19,7 @@ When a number means something you'll need to use `/trigger .<name> set [num]`
  - Toggle the scoreboard cycle: `.SbCycle`
  - Set a specific scoreboard: `.StatName` will set the StatName scoreboard (eg: `.Deaths`)
  - Clear the sidebar: `.clear`
+ - Change the player colors: `.color set [num]`, color codes can be looked up [here](https://minecraft.gamepedia.com/Formatting_codes)
 
 ##### Tps & Entity counter
 To show & update the debug scoreboard for N seconds: `.Debug set [seconds]` (max: 60).\

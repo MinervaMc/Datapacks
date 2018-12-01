@@ -77,3 +77,4 @@ scoreboard objectives add .HardestStone trigger
 scoreboard objectives add .IcePacked trigger
 
 scoreboard objectives add .clear trigger
+scoreboard objectives add .color trigger
