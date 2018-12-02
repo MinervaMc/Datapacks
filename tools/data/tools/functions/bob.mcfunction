@@ -1,0 +1,2 @@
+execute as @e[tag=bob,limit=1] at @s if entity @s[x=250,dx=10000] run data merge entity @s {Motion:[-2d,0d,0d]}
+execute as @e[tag=bob,limit=1] at @s if entity @s[x=270,dx=10000] run data merge entity @s {Motion:[-8d,0d,0d]}
