@@ -5,6 +5,7 @@
  - afk_detect (Detects afk ppl, changes color and stops lifetime & timeplayed)
  - slow_tick (Internal datapack, runs the 1 sec and 5 sec clock)
  - disable_cod (All cod is teleported to the void every 5s, their TPS impact was huge)
+ - disable_bats (All bats are teleported to the void every 5s)
  - fast_netherrack (Netherrack items despawn in 5-10 seconds)
  - scoreboards (Scoreboard cycle & triggers, read more bellow)
  - fast_stone [disabled] (Stone & cobble despawns in 5-10 seconds)
