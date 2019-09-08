@@ -11,6 +11,7 @@
  - fast_stone [disabled] (Stone & cobble despawns in 5-10 seconds)
  - spectator (Spectator gamemode for everyone)
  - tools (Random tools: entity counter, tps display, unicorn, read more bellow)
+ - better_mending (Drops xp while standing on an anvil, allowing mending with your own xp. Player must be minimum lvl 6)
 
 #### Commands:
 All of the trigger commands are in the form of `/trigger .<name>` (defaults to value 1)\
