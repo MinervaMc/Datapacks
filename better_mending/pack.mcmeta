@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "description": "Drops xp orbs when standing on an anvil, allowing tool repairing via mending",
+    "pack_format": 4
+  }
+}
