@@ -18,5 +18,6 @@ execute if block ~ ~2 ~ minecraft:lava run scoreboard players set @s valid 0
 execute if block ~ ~2 ~ minecraft:fire run scoreboard players set @s valid 0
 execute if block ~ ~-1 ~ minecraft:air unless data entity @s {FallDistance:0f} run scoreboard players set @s valid 0
 execute if block ~ ~-1 ~ minecraft:cactus run scoreboard players set @s valid 0
+execute if data entity @s {Air:0s} run scoreboard players set @s valid 0
 
 execute if score @s valid matches 1 run gamemode spectator @s
