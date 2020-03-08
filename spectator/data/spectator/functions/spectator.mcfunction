@@ -8,16 +8,8 @@ execute store result score @s spec_ry run data get entity @s Rotation[1] 64
 execute store result score @s spec_dim run data get entity @s Dimension
 
 #Conditions for cheating (block is fire/lava, or falling)
-execute if block ~ ~ ~ minecraft:lava run scoreboard players set @s valid 0
-execute if block ~ ~ ~ minecraft:fire run scoreboard players set @s valid 0
-execute if block ~ ~-1 ~ minecraft:lava run scoreboard players set @s valid 0
-execute if block ~ ~-1 ~ minecraft:fire run scoreboard players set @s valid 0
-execute if block ~ ~1 ~ minecraft:lava run scoreboard players set @s valid 0
-execute if block ~ ~1 ~ minecraft:fire run scoreboard players set @s valid 0
-execute if block ~ ~2 ~ minecraft:lava run scoreboard players set @s valid 0
-execute if block ~ ~2 ~ minecraft:fire run scoreboard players set @s valid 0
-execute if block ~ ~-1 ~ minecraft:air unless data entity @s {FallDistance:0f} run scoreboard players set @s valid 0
-execute if block ~ ~-1 ~ minecraft:cactus run scoreboard players set @s valid 0
-execute if data entity @s {Air:0s} run scoreboard players set @s valid 0
+execute unless data entity @s {Air:300s} run scoreboard players set @s valid 0
+execute unless data entity @s {OnGround:1b} run scoreboard players set @s valid 0
+execute unless data entity @s {Fire:-20s} run scoreboard players set @s valid 0
 
 execute if score @s valid matches 1 run gamemode spectator @s
