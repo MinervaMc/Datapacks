@@ -13,3 +13,4 @@ execute unless data entity @s {OnGround:1b} run scoreboard players set @s valid 
 execute unless data entity @s {Fire:-20s} run scoreboard players set @s valid 0
 
 execute if score @s valid matches 1 run gamemode spectator @s
+execute if score @s valid matches 0 run tellraw @s {"text":"You are in an invalid location to change into spectator mode"}
