@@ -39,3 +39,4 @@ The `.Unicorn` trigger will toggle the horn, accepted values:
  
 ##### Spectator
 To toggle between survival and spectator you can use the `.Spectator` trigger, when leaving spectator mode you will be placed where you entered spectator mode.
+It will only allow you to go into spectator if you are not taking damage/falling/drowning
