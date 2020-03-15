@@ -13,5 +13,5 @@ execute if block ~ ~ ~ minecraft:water run scoreboard players set @s valid 1
 execute unless data entity @s {Air:300s} run scoreboard players set @s valid 0
 execute unless data entity @s {Fire:-20s} run scoreboard players set @s valid 0
 
-execute if score @s valid matches 1 run gamemode spectator @s
-execute if score @s valid matches 0 run tellraw @s {"text":"You are in an invalid location to change into spectator mode"}
+gamemode spectator @s[scores={valid=0}]
+tellraw @s[scores={valid=0}] {"text":"You are in an invalid location to change into spectator mode"}
