@@ -76,5 +76,12 @@ scoreboard objectives add .ShovelUser trigger
 scoreboard objectives add .HardestStone trigger
 scoreboard objectives add .IcePacked trigger
 
+scoreboard objectives add .honeyBlocked trigger
+scoreboard objectives add .DeepBlue trigger
+scoreboard objectives add .PackedIce trigger
+scoreboard objectives add .BlueIcePunch trigger
+scoreboard objectives add .CombsMade trigger
+scoreboard objectives add .stingersRemoved trigger
+
 scoreboard objectives add .clear trigger
 scoreboard objectives add .color trigger

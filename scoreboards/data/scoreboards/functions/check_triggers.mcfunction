@@ -76,6 +76,13 @@ execute if entity @a[scores={.ShovelUser=1..}] run scoreboard objectives setdisp
 execute if entity @a[scores={.HardestStone=1..}] run scoreboard objectives setdisplay sidebar HardestStone
 execute if entity @a[scores={.IcePacked=1..}] run scoreboard objectives setdisplay sidebar IcePacked
 
+execute if entity @a[scores={.honeyBlocked=1..}] run scoreboard objectives setdisplay sidebar honeyBlocked
+execute if entity @a[scores={.DeepBlue=1..}] run scoreboard objectives setdisplay sidebar DeepBlue
+execute if entity @a[scores={.PackedIce=1..}] run scoreboard objectives setdisplay sidebar PackedIce
+execute if entity @a[scores={.BlueIcePunch=1..}] run scoreboard objectives setdisplay sidebar BlueIcePunch
+execute if entity @a[scores={.CombsMade=1..}] run scoreboard objectives setdisplay sidebar CombsMade
+execute if entity @a[scores={.stingersRemoved=1..}] run scoreboard objectives setdisplay sidebar stingersRemoved
+
 execute if entity @a[scores={.clear=1..}] run scoreboard objectives setdisplay sidebar
 execute if entity @a[scores={.color=1}] run team modify default color dark_blue
 execute if entity @a[scores={.color=2}] run team modify default color dark_green
@@ -172,6 +179,13 @@ scoreboard players reset @a .ShovelUser
 scoreboard players reset @a .HardestStone
 scoreboard players reset @a .IcePacked
 
+scoreboard players reset @a .honeyBlocked
+scoreboard players reset @a .DeepBlue
+scoreboard players reset @a .PackedIce
+scoreboard players reset @a .BlueIcePunch
+scoreboard players reset @a .CombsMade
+scoreboard players reset @a .stingersRemoved
+
 scoreboard players reset @a .clear
 scoreboard players reset @a .color
 
@@ -252,6 +266,13 @@ scoreboard players enable @a .SwordSwings
 scoreboard players enable @a .ShovelUser
 scoreboard players enable @a .HardestStone
 scoreboard players enable @a .IcePacked
+
+scoreboard players enable @a .honeyBlocked
+scoreboard players enable @a .DeepBlue
+scoreboard players enable @a .PackedIce
+scoreboard players enable @a .BlueIcePunch
+scoreboard players enable @a .CombsMade
+scoreboard players enable @a .stingersRemoved
 
 scoreboard players enable @a .clear
 scoreboard players enable @a .color

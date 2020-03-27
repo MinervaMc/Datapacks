@@ -75,3 +75,10 @@ scoreboard objectives add SwordSwings minecraft.used:minecraft.diamond_sword "Sw
 scoreboard objectives add ShovelUser minecraft.used:minecraft.diamond_shovel "ShovelUser"
 scoreboard objectives add HardestStone minecraft.broken:minecraft.obsidian "HardestStone"
 scoreboard objectives add IcePacked minecraft.broken:minecraft.packed_ice
+
+scoreboard objectives add honeyBlocked minecraft.crafted:minecraft.honey_block
+scoreboard objectives add DeepBlue minecraft.crafted:minecraft.blue_ice
+scoreboard objectives add PackedIce minecraft.crafted:minecraft.packed_ice
+scoreboard objectives add BlueIcePunch minecraft.broken:minecraft.blue_ice
+scoreboard objectives add CombsMade minecraft.crafted:minecraft.honeycomb_block
+scoreboard objectives add stingersRemoved minecraft.killed:minecraft.bee
