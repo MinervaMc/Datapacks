@@ -1,3 +1,4 @@
+execute store result score MSPT Debug run worldborder get
 worldborder set 16384
 worldborder add 1000 20
 
