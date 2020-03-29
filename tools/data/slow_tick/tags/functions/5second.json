@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-	"tools:unicorn/run_tick"
+	"tools:unicorn/run_tick",
+    "tools:bclock/update_players"
   ]
 }

@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
 	"tools:debug/run_tick",
-    "tools:debug/tps_update"
+    "tools:debug/tps_update",
+    "tools:bclock/run_tick"
   ]
 }
