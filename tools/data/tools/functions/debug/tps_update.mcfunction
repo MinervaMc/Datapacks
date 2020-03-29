@@ -1,9 +1,8 @@
-execute store result score MSPT Debug run worldborder get
-worldborder set 59900000
-worldborder add 100000 20
+worldborder set 16384
+worldborder add 1000 20
 
-scoreboard players remove MSPT Debug 59900000
-scoreboard players set TPS Debug 10000000
+scoreboard players remove MSPT Debug 16384
+scoreboard players set TPS Debug 100000
 scoreboard players operation TPS Debug /= MSPT Debug
 
 scoreboard players operation #TPS_whole Debug = TPS Debug

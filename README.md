@@ -10,7 +10,7 @@
  - scoreboards (Scoreboard cycle & triggers, read more bellow)
  - fast_stone [disabled] (Stone & cobble despawns in 5-10 seconds)
  - spectator (Spectator gamemode for everyone)
- - tools (Random tools: entity counter, tps display, unicorn, read more bellow)
+ - tools (Random tools: entity counter, tps display, unicorn (read more bellow), better clock)
  - better_mending (Drops xp while standing on an anvil, allowing mending with your own xp. Player must be minimum lvl 6)
 
 #### Commands:
