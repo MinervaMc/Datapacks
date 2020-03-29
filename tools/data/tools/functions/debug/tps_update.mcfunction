@@ -15,13 +15,16 @@ scoreboard players operation #TPS_digit2 Debug = #TPS_digit Debug
 scoreboard players operation #TPS_digit Debug /= #TEN Debug
 scoreboard players operation #TPS_digit2 Debug %= #TEN Debug
 
-scoreboard players operation #MSPT_whole Debug = MSPT Debug
-scoreboard players operation #MSPT_whole Debug /= #ONE_HUNDRED Debug
+title @a footer [{"text":"TPS: ","color":"aqua"},{"score":{"name":"#TPS_whole","objective":"Debug"},"color":"blue"},{"text":".","color":"blue"},{"score":{"name":"#TPS_digit","objective":"Debug"},"color":"blue"},{"score":{"name":"#TPS_digit2","objective":"Debug"},"color":"blue"},{"text":" | ","color":"none"},{"text":"MSPT: ","color":"green"},{"score":{"name":"MSPT","objective":"Debug"},"color":"dark_green"}]
 
-scoreboard players operation #MSPT_digit Debug = MSPT Debug
-scoreboard players operation #MSPT_digit Debug %= #ONE_HUNDRED Debug
-scoreboard players operation #MSPT_digit2 Debug = #MSPT_digit Debug
-scoreboard players operation #MSPT_digit Debug /= #TEN Debug
-scoreboard players operation #MSPT_digit2 Debug %= #TEN Debug
+# Since we now have a worldborder at 16K, the sensibility of MSPT no longer has decimals
+# scoreboard players operation #MSPT_whole Debug = MSPT Debug
+# scoreboard players operation #MSPT_whole Debug /= #ONE_HUNDRED Debug
+#
+# scoreboard players operation #MSPT_digit Debug = MSPT Debug
+# scoreboard players operation #MSPT_digit Debug %= #ONE_HUNDRED Debug
+# scoreboard players operation #MSPT_digit2 Debug = #MSPT_digit Debug
+# scoreboard players operation #MSPT_digit Debug /= #TEN Debug
+# scoreboard players operation #MSPT_digit2 Debug %= #TEN Debug
 
-title @a footer [{"text":"TPS: ","color":"aqua"},{"score":{"name":"#TPS_whole","objective":"Debug"},"color":"blue"},{"text":".","color":"blue"},{"score":{"name":"#TPS_digit","objective":"Debug"},"color":"blue"},{"score":{"name":"#TPS_digit2","objective":"Debug"},"color":"blue"},{"text":" | ","color":"none"},{"text":"MSPT: ","color":"green"},{"score":{"name":"#MSPT_whole","objective":"Debug"},"color":"dark_green"},{"text":".","color":"dark_green"},{"score":{"name":"#MSPT_digit","objective":"Debug"},"color":"dark_green"},{"score":{"name":"#MSPT_digit2","objective":"Debug"},"color":"dark_green"}]
+#title @a footer [{"text":"TPS: ","color":"aqua"},{"score":{"name":"#TPS_whole","objective":"Debug"},"color":"blue"},{"text":".","color":"blue"},{"score":{"name":"#TPS_digit","objective":"Debug"},"color":"blue"},{"score":{"name":"#TPS_digit2","objective":"Debug"},"color":"blue"},{"text":" | ","color":"none"},{"text":"MSPT: ","color":"green"},{"score":{"name":"#MSPT_whole","objective":"Debug"},"color":"dark_green"},{"text":".","color":"dark_green"},{"score":{"name":"#MSPT_digit","objective":"Debug"},"color":"dark_green"},{"score":{"name":"#MSPT_digit2","objective":"Debug"},"color":"dark_green"}]
