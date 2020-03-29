@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "sleeping": {
+            "trigger": "minecraft:slept_in_bed"
+        },
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "rewards": {
+        "function": "multiplayer_sleep:start"
+    }
+}

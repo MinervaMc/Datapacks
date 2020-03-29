@@ -1,7 +1,8 @@
 #### Datapacks:
  - disable_endermen_grief (Endermen can't pick up blocks)
  - universal_dyeing (Adds dye-related recipes, like for hardened clay)
- - sleep (One player sleep, you can wake up people via clicking the chat msg)
+ - sleep (One player sleep, you can wake up people via clicking the chat msg) (not working in 1.15)
+ - multiplayer_sleep (one player sleep) (Works in 1.15)
  - afk_detect (Detects afk ppl, changes color and stops lifetime & timeplayed)
  - slow_tick (Internal datapack, runs the 1 sec and 5 sec clock)
  - disable_cod (All cod is teleported to the void every 5s, their TPS impact was huge)

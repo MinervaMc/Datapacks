@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:chest"
+        },
+        "title": {
+            "text": "Vanilla Tweaks",
+            "bold": true,
+            "color": "gold"
+        },
+        "description": {
+            "text": "All currently installed datapacks",
+            "color": "white",
+            "bold": false,
+            "italic": true
+        },
+        "background": "minecraft:textures/block/black_concrete.png",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "frame": "challenge"
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
