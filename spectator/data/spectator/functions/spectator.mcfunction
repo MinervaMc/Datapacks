@@ -12,6 +12,7 @@ execute unless data entity @s {OnGround:1b} run scoreboard players set @s valid 
 execute if block ~ ~ ~ minecraft:water run scoreboard players set @s valid 1
 execute unless data entity @s {Air:300s} run scoreboard players set @s valid 0
 execute unless data entity @s {Fire:-20s} run scoreboard players set @s valid 0
+execute unless data entity @s {Dimension:0} run scoreboard players set @s valid 0
 
 gamemode spectator @s[scores={valid=1}]
 tellraw @s[scores={valid=0}] [{"text":"⚠ ", "color":"yellow", "bold":"true"},{"text":"You are not safe to change into spectator mode", "color":"red", "bold": "false"}]
