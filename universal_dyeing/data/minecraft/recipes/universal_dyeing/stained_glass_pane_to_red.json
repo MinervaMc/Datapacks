@@ -10,7 +10,7 @@
             "tag": "minecraft:stained_glass_pane"
         },
         "$": {
-            "item": "minecraft:rose_red"
+            "item": "minecraft:red_dye"
         }
     },
     "result": {

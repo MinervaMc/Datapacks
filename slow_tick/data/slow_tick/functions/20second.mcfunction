@@ -1,0 +1,1 @@
+scoreboard players set CurrentSecond slow_tick 0
