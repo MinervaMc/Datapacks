@@ -10,7 +10,7 @@
             "tag": "minecraft:concrete_powder"
         },
         "$": {
-            "item": "minecraft:dandelion_yellow"
+            "item": "minecraft:yellow_dye"
         }
     },
     "result": {

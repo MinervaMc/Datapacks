@@ -10,7 +10,7 @@
             "tag": "minecraft:stained_glass_pane"
         },
         "$": {
-            "item": "minecraft:dandelion_yellow"
+            "item": "minecraft:yellow_dye"
         }
     },
     "result": {

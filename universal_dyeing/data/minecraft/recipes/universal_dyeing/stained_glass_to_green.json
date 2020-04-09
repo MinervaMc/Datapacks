@@ -10,7 +10,7 @@
             "tag": "minecraft:stained_glass"
         },
         "$": {
-            "item": "minecraft:cactus_green"
+            "item": "minecraft:green_dye"
         }
     },
     "result": {
