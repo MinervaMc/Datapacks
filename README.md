@@ -1,5 +1,5 @@
 #### Datapacks:
- - minerva (Utils for installation of all datapacks)
+ - minerva (Utils for installation and administration of datapacks)
  - disable_endermen_grief (Endermen can't pick up blocks)
  - universal_dyeing (Adds dye-related recipes, like for hardened clay)
  - dropper_bow_dispenser (Adds a recipe for dispensers with a dropper in a bow shape recipe)
