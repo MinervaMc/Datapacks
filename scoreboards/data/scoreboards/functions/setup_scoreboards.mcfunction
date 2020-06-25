@@ -64,7 +64,7 @@ scoreboard objectives add PistonsMade minecraft.crafted:minecraft.piston "Piston
 scoreboard objectives add TntPlaced minecraft.used:minecraft.tnt "StuffBlown"
 scoreboard objectives add EmerladsPicked minecraft.mined:minecraft.emerald_ore "EmerladsPicked"
 scoreboard objectives add SnowBallsMade minecraft.mined:minecraft.snow "SnowBallsMade"
-scoreboard objectives add GoldenPigged minecraft.killed:zombie_pigman "GoldenPigged"
+scoreboard objectives add GoldenPigged minecraft.killed:minecraft.zombified_piglin "GoldenPigged"
 scoreboard objectives add SteakDinners minecraft.used:minecraft.cooked_beef "SteakDinners"
 scoreboard objectives add HardcoreClayers minecraft.mined:minecraft.terracotta "HardcoreClayers"
 scoreboard objectives add BlueOreMined minecraft.mined:minecraft.lapis_ore "BlueOreMined"

@@ -15,7 +15,8 @@ scoreboard players operation #TPS_digit2 Debug = #TPS_digit Debug
 scoreboard players operation #TPS_digit Debug /= #TEN Debug
 scoreboard players operation #TPS_digit2 Debug %= #TEN Debug
 
-title @a footer [{"text":"TPS: ","color":"aqua"},{"score":{"name":"#TPS_whole","objective":"Debug"},"color":"blue"},{"text":".","color":"blue"},{"score":{"name":"#TPS_digit","objective":"Debug"},"color":"blue"},{"score":{"name":"#TPS_digit2","objective":"Debug"},"color":"blue"},{"text":" | ","color":"none"},{"text":"MSPT: ","color":"green"},{"score":{"name":"MSPT","objective":"Debug"},"color":"dark_green"}]
+# Disabled due to lack of jarmod for this command
+# title @a footer [{"text":"TPS: ","color":"aqua"},{"score":{"name":"#TPS_whole","objective":"Debug"},"color":"blue"},{"text":".","color":"blue"},{"score":{"name":"#TPS_digit","objective":"Debug"},"color":"blue"},{"score":{"name":"#TPS_digit2","objective":"Debug"},"color":"blue"},{"text":" | ","color":"none"},{"text":"MSPT: ","color":"green"},{"score":{"name":"MSPT","objective":"Debug"},"color":"dark_green"}]
 
 # Since we now have a worldborder at 16K, the sensibility of MSPT no longer has decimals
 # scoreboard players operation #MSPT_whole Debug = MSPT Debug
