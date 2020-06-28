@@ -19,4 +19,11 @@ execute at @a[scores={.DespawnItems=7}] run tellraw @a[scores={.DespawnItems=7}]
 execute at @a[scores={.DespawnItems=8}] run scoreboard players set Kelp despawnItems 0
 execute at @a[scores={.DespawnItems=8}] run tellraw @a[scores={.DespawnItems=8}] [{"text":"Disabled fast despawn for kelp items","color":"yellow"}]
 
+execute at @a[scores={.DespawnItems=9}] run scoreboard players set Grass despawnItems 0
+execute at @a[scores={.DespawnItems=9}] run tellraw @a[scores={.DespawnItems=9}] [{"text":"Disabled fast despawn for grass items","color":"yellow"}]
+
+execute at @a[scores={.DespawnItems=10}] run scoreboard players set Sand despawnItems 0
+execute at @a[scores={.DespawnItems=10}] run tellraw @a[scores={.DespawnItems=10}] [{"text":"Disabled fast despawn for sand items","color":"yellow"}]
+
+
 scoreboard players reset @a[scores={.DespawnItems=1..}] .DespawnItems
