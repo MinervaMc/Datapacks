@@ -1,6 +1,6 @@
-execute as @s if score @s spec_dim matches 0 in minecraft:overworld run tp @s ~ ~ ~
-execute as @s if score @s spec_dim matches -1 in minecraft:the_nether run tp @s ~ ~ ~
-execute as @s if score @s spec_dim matches 1 in minecraft:the_end run tp @s ~ ~ ~
+execute as @s if score @s spec_dim matches 19 in minecraft:overworld run tp @s ~ ~ ~
+execute as @s if score @s spec_dim matches 20 in minecraft:the_nether run tp @s ~ ~ ~
+execute as @s if score @s spec_dim matches 17 in minecraft:the_end run tp @s ~ ~ ~
 
 execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["spec"],Duration:1}
 tag @s add spec
