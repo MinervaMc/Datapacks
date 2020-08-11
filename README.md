@@ -17,9 +17,6 @@
 All of the trigger commands are in the form of `/trigger .<name>` (defaults to value 1)\
 When a number means something you'll need to use `/trigger .<name> set [num]`
 
-##### Install All:
-To install all of the provided datapacks properly, run `/function minerva:install_all` for ease and reliability (OP only)
-
 ##### Get Admin:
 The *disable_mobs* and *fast_despawn* datapacks require the admin tag. To get it, run `/function minerva:get_admin`
 
@@ -69,3 +66,5 @@ To toggle fast despawning items you can use the `.DespawnItems` trigger. The fol
 6. Netherrack
 7. Ender Pearls
 8. Kelp
+9. Grass
+10. Sand

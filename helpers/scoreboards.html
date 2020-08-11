@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<title>Generate Scoreboard Datapack Files</title>
+</head>
+<body>
+	<h2 class="text-center mt-3">File Contents for Scoreboards Datapack</h1>
+
+	<div class="container">
+		<p class="text-center mt-2 mb-2">&lt;world&gt;/datapacks/scoreboards/data/scoreboards/functions/setup_scoreboards.mcfunction</p>
+		<textarea class="form-control mb-3" id="objectiveCommands" cols="30" rows="10"></textarea>
+
+		<p class="text-center mt-2 mb-2">&lt;world&gt;/datapacks/scoreboards/data/scoreboards/functions/setup_triggers.mcfunction</p>
+		<textarea class="form-control mb-3" id="triggerCommands" cols="30" rows="10"></textarea>
+		
+		<p class="text-center mt-2 mb-2">&lt;world&gt;/datapacks/scoreboards/data/scoreboards/functions/check_triggers.mcfunction</p>
+		<textarea class="form-control mb-3" id="checkTrigger" cols="30" rows="10"></textarea>
+	</div>
+
+	<script>
+		let objectiveCommands = document.querySelector('#objectiveCommands');
+		let triggerCommands = document.querySelector('#triggerCommands');
+		let checkTrigger = document.querySelector('#checkTrigger');
+
+		let colors = [ 'dark_blue', 'dark_green', 'dark_aqua', 'dark_red', 'dark_purple', 'gold', 'gray', 'dark_gray', 'blue', 'green', 'aqua', 'red', 'light_purple', 'yellow', 'white', 'black', ];
+
+		async function main() {
+			let res = await fetch('./scoreboards.json');
+			let json = await res.json();
+
+			let addObjectiveCommands = json.map(obj => [
+				'scoreboard objectives add',
+				obj.name,
+				obj.type,
+				obj.display ? `"${obj.display}"` : '',
+			].join(' ').trim());
+
+			objectiveCommands.innerHTML = addObjectiveCommands.join('\n');
+
+			let addTriggerCommands = json.map(obj => [
+				'scoreboard objectives add',
+				`.${obj.name}`,
+				'trigger'
+			].join(' ').trim());
+
+			triggerCommands.innerHTML = addTriggerCommands.join('\n');
+			
+			let checkTriggerCommands = json.map(obj => [
+				`execute if entity @a[scores={.${obj.name}=1..}] run scoreboard objectives setdisplay sidebar`,
+				obj.name
+			].join(' ').trim());
+
+			checkTriggerCommands.push('');
+			
+			checkTriggerCommands.push('execute if entity @a[scores={.clear=1..}] run scoreboard objectives setdisplay sidebar');
+
+			checkTriggerCommands.push(...(colors.map((color, i) => [
+				`execute if entity @a[scores={.color=${i + 1}}] run team modify default color`,
+				color
+			].join(' ').trim())));
+
+			checkTriggerCommands.push('');
+
+			checkTriggerCommands.push(...(json.map(obj => [
+				`scoreboard players reset @a`,
+				`.${obj.name}`,
+			].join(' ').trim())));
+
+			checkTriggerCommands.push('scoreboard players reset @a .clear', 'scoreboard players reset @a .color', '');
+
+			checkTriggerCommands.push(...(json.map(obj => [
+				`scoreboard players enable @a`,
+				`.${obj.name}`,
+			].join(' ').trim())));
+
+			checkTriggerCommands.push('scoreboard players enable @a .clear', 'scoreboard players enable @a .color');
+
+			checkTrigger.innerHTML = checkTriggerCommands.join('\n');
+		}
+
+		main();
+	</script>
+
+	<style>
+		textarea {
+			resize: vertical;
+		}
+	</style>
+</body>
+</html>
