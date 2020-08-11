@@ -1,9 +1,9 @@
-execute if score Bat disabledMobs = #ONE disabledMobs run execute as @e[type=minecraft:bat] at @s run teleport @s ~ -1000 ~
-execute if score Fish disabledMobs = #ONE disabledMobs run execute as @e[type=minecraft:cod] at @s run teleport @s ~ -1000 ~
-execute if score Fish disabledMobs = #ONE disabledMobs run execute as @e[type=minecraft:salmon] at @s run teleport @s ~ -1000 ~
-execute if score Fish disabledMobs = #ONE disabledMobs run execute as @e[type=minecraft:tropical_fish] at @s run teleport @s ~ -1000 ~
-execute if score Fish disabledMobs = #ONE disabledMobs run execute as @e[type=minecraft:pufferfish] at @s run teleport @s ~ -1000 ~
-execute if score Guardian disabledMobs = #ONE disabledMobs run execute as @e[type=minecraft:guardian] at @s run teleport @s ~ -1000 ~
+execute if score Bat disabledMobs matches 1 run execute as @e[type=minecraft:bat] at @s run teleport @s ~ -1000 ~
+execute if score Fish disabledMobs matches 1 run execute as @e[type=minecraft:cod] at @s run teleport @s ~ -1000 ~
+execute if score Fish disabledMobs matches 1 run execute as @e[type=minecraft:salmon] at @s run teleport @s ~ -1000 ~
+execute if score Fish disabledMobs matches 1 run execute as @e[type=minecraft:tropical_fish] at @s run teleport @s ~ -1000 ~
+execute if score Fish disabledMobs matches 1 run execute as @e[type=minecraft:pufferfish] at @s run teleport @s ~ -1000 ~
+execute if score Guardian disabledMobs matches 1 run execute as @e[type=minecraft:guardian] at @s run teleport @s ~ -1000 ~
 
 execute at @p[scores={.DisableMob=1}] run function disable_mobs:add
 

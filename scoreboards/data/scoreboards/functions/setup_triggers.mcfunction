@@ -28,7 +28,7 @@ scoreboard objectives add .SoilCollected trigger
 scoreboard objectives add .Run trigger
 scoreboard objectives add .BitchesSmacked trigger
 scoreboard objectives add .ClayWithMe trigger
-scoreboard objectives add .GlowstoneBlocks trigger ".GlowstoneBlocked"
+scoreboard objectives add .GlowstoneBlocked trigger
 scoreboard objectives add .PickaxeUser trigger
 scoreboard objectives add .SkellyBellies trigger
 scoreboard objectives add .RedOreMined trigger
@@ -37,7 +37,7 @@ scoreboard objectives add .ButtonsMade trigger
 scoreboard objectives add .CoalMiner trigger
 scoreboard objectives add .ChestsPeakedAt trigger
 scoreboard objectives add .WinnerWinner trigger
-scoreboard objectives add .RedstoneDusted trigger ".RedstoneDustUsed"
+scoreboard objectives add .RedstoneDustUsed trigger
 scoreboard objectives add .CapsPopped trigger
 scoreboard objectives add .BucketsFilled trigger
 scoreboard objectives add .Hearts trigger
@@ -75,13 +75,14 @@ scoreboard objectives add .SwordSwings trigger
 scoreboard objectives add .ShovelUser trigger
 scoreboard objectives add .HardestStone trigger
 scoreboard objectives add .IcePacked trigger
-
 scoreboard objectives add .honeyBlocked trigger
 scoreboard objectives add .DeepBlue trigger
 scoreboard objectives add .PackedIce trigger
 scoreboard objectives add .BlueIcePunch trigger
 scoreboard objectives add .CombsMade trigger
 scoreboard objectives add .stingersRemoved trigger
+scoreboard objectives add .DeadMenChested trigger
+scoreboard objectives add .NetheriteMined trigger
 
 scoreboard objectives add .clear trigger
 scoreboard objectives add .color trigger

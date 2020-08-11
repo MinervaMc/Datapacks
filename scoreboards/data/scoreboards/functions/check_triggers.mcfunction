@@ -28,7 +28,7 @@ execute if entity @a[scores={.SoilCollected=1..}] run scoreboard objectives setd
 execute if entity @a[scores={.Run=1..}] run scoreboard objectives setdisplay sidebar Run
 execute if entity @a[scores={.BitchesSmacked=1..}] run scoreboard objectives setdisplay sidebar BitchesSmacked
 execute if entity @a[scores={.ClayWithMe=1..}] run scoreboard objectives setdisplay sidebar ClayWithMe
-execute if entity @a[scores={.GlowstoneBlocks=1..}] run scoreboard objectives setdisplay sidebar GlowstoneBlocked
+execute if entity @a[scores={.GlowstoneBlocked=1..}] run scoreboard objectives setdisplay sidebar GlowstoneBlocked
 execute if entity @a[scores={.PickaxeUser=1..}] run scoreboard objectives setdisplay sidebar PickaxeUser
 execute if entity @a[scores={.SkellyBellies=1..}] run scoreboard objectives setdisplay sidebar SkellyBellies
 execute if entity @a[scores={.RedOreMined=1..}] run scoreboard objectives setdisplay sidebar RedOreMined
@@ -37,7 +37,7 @@ execute if entity @a[scores={.ButtonsMade=1..}] run scoreboard objectives setdis
 execute if entity @a[scores={.CoalMiner=1..}] run scoreboard objectives setdisplay sidebar CoalMiner
 execute if entity @a[scores={.ChestsPeakedAt=1..}] run scoreboard objectives setdisplay sidebar ChestsPeakedAt
 execute if entity @a[scores={.WinnerWinner=1..}] run scoreboard objectives setdisplay sidebar WinnerWinner
-execute if entity @a[scores={.RedstoneDusted=1..}] run scoreboard objectives setdisplay sidebar RedstoneDustUsed
+execute if entity @a[scores={.RedstoneDustUsed=1..}] run scoreboard objectives setdisplay sidebar RedstoneDustUsed
 execute if entity @a[scores={.CapsPopped=1..}] run scoreboard objectives setdisplay sidebar CapsPopped
 execute if entity @a[scores={.BucketsFilled=1..}] run scoreboard objectives setdisplay sidebar BucketsFilled
 execute if entity @a[scores={.Hearts=1..}] run scoreboard objectives setdisplay sidebar Hearts
@@ -75,13 +75,14 @@ execute if entity @a[scores={.SwordSwings=1..}] run scoreboard objectives setdis
 execute if entity @a[scores={.ShovelUser=1..}] run scoreboard objectives setdisplay sidebar ShovelUser
 execute if entity @a[scores={.HardestStone=1..}] run scoreboard objectives setdisplay sidebar HardestStone
 execute if entity @a[scores={.IcePacked=1..}] run scoreboard objectives setdisplay sidebar IcePacked
-
 execute if entity @a[scores={.honeyBlocked=1..}] run scoreboard objectives setdisplay sidebar honeyBlocked
 execute if entity @a[scores={.DeepBlue=1..}] run scoreboard objectives setdisplay sidebar DeepBlue
 execute if entity @a[scores={.PackedIce=1..}] run scoreboard objectives setdisplay sidebar PackedIce
 execute if entity @a[scores={.BlueIcePunch=1..}] run scoreboard objectives setdisplay sidebar BlueIcePunch
 execute if entity @a[scores={.CombsMade=1..}] run scoreboard objectives setdisplay sidebar CombsMade
 execute if entity @a[scores={.stingersRemoved=1..}] run scoreboard objectives setdisplay sidebar stingersRemoved
+execute if entity @a[scores={.DeadMenChested=1..}] run scoreboard objectives setdisplay sidebar DeadMenChested
+execute if entity @a[scores={.NetheriteMined=1..}] run scoreboard objectives setdisplay sidebar NetheriteMined
 
 execute if entity @a[scores={.clear=1..}] run scoreboard objectives setdisplay sidebar
 execute if entity @a[scores={.color=1}] run team modify default color dark_blue
@@ -131,7 +132,7 @@ scoreboard players reset @a .SoilCollected
 scoreboard players reset @a .Run
 scoreboard players reset @a .BitchesSmacked
 scoreboard players reset @a .ClayWithMe
-scoreboard players reset @a .GlowstoneBlocks
+scoreboard players reset @a .GlowstoneBlocked
 scoreboard players reset @a .PickaxeUser
 scoreboard players reset @a .SkellyBellies
 scoreboard players reset @a .RedOreMined
@@ -140,7 +141,7 @@ scoreboard players reset @a .ButtonsMade
 scoreboard players reset @a .CoalMiner
 scoreboard players reset @a .ChestsPeakedAt
 scoreboard players reset @a .WinnerWinner
-scoreboard players reset @a .RedstoneDusted
+scoreboard players reset @a .RedstoneDustUsed
 scoreboard players reset @a .CapsPopped
 scoreboard players reset @a .BucketsFilled
 scoreboard players reset @a .Hearts
@@ -178,14 +179,14 @@ scoreboard players reset @a .SwordSwings
 scoreboard players reset @a .ShovelUser
 scoreboard players reset @a .HardestStone
 scoreboard players reset @a .IcePacked
-
 scoreboard players reset @a .honeyBlocked
 scoreboard players reset @a .DeepBlue
 scoreboard players reset @a .PackedIce
 scoreboard players reset @a .BlueIcePunch
 scoreboard players reset @a .CombsMade
 scoreboard players reset @a .stingersRemoved
-
+scoreboard players reset @a .DeadMenChested
+scoreboard players reset @a .NetheriteMined
 scoreboard players reset @a .clear
 scoreboard players reset @a .color
 
@@ -219,7 +220,7 @@ scoreboard players enable @a .SoilCollected
 scoreboard players enable @a .Run
 scoreboard players enable @a .BitchesSmacked
 scoreboard players enable @a .ClayWithMe
-scoreboard players enable @a .GlowstoneBlocks
+scoreboard players enable @a .GlowstoneBlocked
 scoreboard players enable @a .PickaxeUser
 scoreboard players enable @a .SkellyBellies
 scoreboard players enable @a .RedOreMined
@@ -228,7 +229,7 @@ scoreboard players enable @a .ButtonsMade
 scoreboard players enable @a .CoalMiner
 scoreboard players enable @a .ChestsPeakedAt
 scoreboard players enable @a .WinnerWinner
-scoreboard players enable @a .RedstoneDusted
+scoreboard players enable @a .RedstoneDustUsed
 scoreboard players enable @a .CapsPopped
 scoreboard players enable @a .BucketsFilled
 scoreboard players enable @a .Hearts
@@ -266,13 +267,13 @@ scoreboard players enable @a .SwordSwings
 scoreboard players enable @a .ShovelUser
 scoreboard players enable @a .HardestStone
 scoreboard players enable @a .IcePacked
-
 scoreboard players enable @a .honeyBlocked
 scoreboard players enable @a .DeepBlue
 scoreboard players enable @a .PackedIce
 scoreboard players enable @a .BlueIcePunch
 scoreboard players enable @a .CombsMade
 scoreboard players enable @a .stingersRemoved
-
+scoreboard players enable @a .DeadMenChested
+scoreboard players enable @a .NetheriteMined
 scoreboard players enable @a .clear
 scoreboard players enable @a .color
